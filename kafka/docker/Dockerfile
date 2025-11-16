@@ -12,7 +12,7 @@ RUN apt-get update && \
 
 # Copio il consumer e l'entrypoint
 COPY entrypoint.sh /app/entrypoint.sh
-COPY receiver_80mbps.py /app/receiver.py
+COPY receiver.py /app/receiver.py
 
 RUN chmod +x /app/entrypoint.sh
 
