@@ -1,0 +1,15 @@
+  ssh-kafka-consumer:
+    image: gmazzitelli/ssh-kafka-consumer_v1.0  
+    container_name: ssh-kafka-consumer
+    restart: unless-stopped
+    environment:
+      SSH_USER: portfw
+      SSH_HOST: 131.154.99.229
+      LOCAL_PORT: 9092
+      REMOTE_PORT: 9092
+    volumes:
+      - /home/mazzitel/.ssh/hfgw_lnf:/ssh/id_ed25519:ro # change fisrt part to your path /home/mazzitel/.ssh/
+#     -  ${PWD}/receiver_80mbps.py:/app/receiver.py     # to upadte eventually the script
+    # to anable direct loogin to the running docker
+    stdin_open: true
+    tty: true
