@@ -2,7 +2,7 @@
 
 - You do **not** need to clone the repository.
 - Copy the `docker-compose.yml` to your local machine.
-- Ask for an **access key** and save it in a private folder on your local machine  
+- Ask for an **access key** or better provide your own acess key, and save it in a private folder on your local machine  
   (be sure **not** to commit it or store it in publicly accessible locations).
 - The access key must have **user-only permissions**, e.g.:  
   `chmod 600 hfgw_lnf`
