@@ -17,7 +17,7 @@
   `- ./receiver.py:/app/receiver.py`
 - If you prefer to access raw data **without Docker**, it is possible to create an SSH tunnel:
   - Temporary tunnel:  
-    `ssh -L 9092:localhost:9092 user@server_kafka`
+    `ssh -L 9092:localhost:9092 user@server_kafka` ex `ssh -N -L 9092:localhost:9092 portfw@131.154.99.229 -i hfgw_lnf `
   - Permanent tunnel:  
     https://github.com/CYGNUS-RD/middleware/tree/master/conf/sshtunnel/client  
   - Then write your own script connecting to Kafka at:  
